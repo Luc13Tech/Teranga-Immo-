@@ -266,7 +266,7 @@ function sendAdminEmail(userData) {
   // 3. Remplacez les IDs ci-dessous
   const EMAILJS_SERVICE  = 'service_teranga';   // votre service ID
   const EMAILJS_TEMPLATE = 'template_register'; // votre template ID
-  const EMAILJS_PUBLIC   = 'YOUR_PUBLIC_KEY';   // votre clé publique
+  const EMAILJS_PUBLIC   = 'rm-Zu8MBxW1LuhgEs';   // votre clé publique
 
   if (typeof emailjs !== 'undefined') {
     emailjs.send(EMAILJS_SERVICE, EMAILJS_TEMPLATE, {
