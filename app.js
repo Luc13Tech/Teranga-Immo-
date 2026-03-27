@@ -262,7 +262,7 @@ function sendAdminEmail(u) {
       to_email:'immobiliersn9@gmail.com', prenom:u.firstName, nom:u.lastName,
       email:u.email, telephone:u.phone, whatsapp:u.whatsapp, adresse:u.address,
       date: new Date().toLocaleString('fr-FR')
-    },'YOUR_PUBLIC_KEY').catch(e=>console.log('EmailJS:',e));
+    },'rm-Zu8MBxW1LuhgEs').catch(e=>console.log('EmailJS:',e));
   }
   console.log('📧 Admin notification → immobiliersn9@gmail.com', u);
 }
