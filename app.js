@@ -978,7 +978,7 @@ function handleMediaUpload(event) {
   const files=Array.from(event.target.files);
   const preview=document.getElementById('mediaPreview'); if(!preview) return;
   files.forEach(file=>{
-    if (file.size > 20*1024*1024) { showToast('Fichier trop grand (max 20MB) : '+file.name,'error'); return; }
+    if (file.size > 500*1024*1024) { showToast('Fichier trop grand (max 1024Mo) : '+file.name,'error'); return; }
     const type=file.type.startsWith('video/')?'video':'image';
     const reader=new FileReader();
     reader.onload=e=>{
